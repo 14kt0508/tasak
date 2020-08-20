@@ -55,7 +55,7 @@ main{
 	color: #fff;
 }
 .title{
-	margin: 15px 0 5px;/*後の0と5の意味が分からない*/
+	margin: 15px 0 5px;/*（上　右　下　左）（上　左右　下）（上下　左右）（上下左右）*/
 }
 footer{
 	width: 100%;
@@ -65,7 +65,7 @@ footer{
 .social {
 	color:black;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:768px){/*縦になった時の領域*/
 	main{
 		width: 100%;
 	}
@@ -73,8 +73,9 @@ footer{
 		color: red;
 	}
 	.stap-box {
-		float:none;
+		float:none;/*縦になった時に横並びのfloatを解除する。*/
 		margin: 20px auto;
+		width: 90%;
 	}
 	.stap-box:last-child{
 		margin: 20px auto 50px;
